@@ -1,3 +1,7 @@
-.small-story-image{
+img{
   max-width: 100%;
+}
+
+.full-story-image{
+  max-height: 700px;
 }

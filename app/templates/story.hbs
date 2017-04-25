@@ -1,8 +1,11 @@
 
 {{model.title}}
-<img src={{model.image}} alt={{model.title}}>
+<br>
+<img src={{model.image}} alt={{model.title}} class="full-story-image">
 <h3>By {{model.author}}</h3>
 <h4>{{model.date}}</h4>
 <p>
   {{model.body}}
 </p>
+{{update-story story=model update="update"}}
+<button {{action 'delete' model}} class="btn btn-warning">Delete</button>
