@@ -1,10 +1,15 @@
 
 <h1>Bustle</h1>
 <div class="row">
-  {{#each model as |story|}}
+  {{#each model.stories as |story|}}
     {{small-story story=story}}
   {{/each}}
 </div>
 
 <hr>
 {{new-story saveStory="saveStory"}}
+
+<hr>
+{{#each model.featured-story as |story|}}
+  {{small-story story=story}}
+{{/each}}
